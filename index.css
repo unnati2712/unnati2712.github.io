@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  border: 0;
+}
+.body {
+  height: 100vh;
+}
+.main {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+.sub {
+  height: 100%;
+  width: 50%;
+  float: right;
+  background-image: url("./img.jpg");
+  background-size: 100% 100vh;
+}
+.logo{
+  margin-top: 1.5rem;
+    animation-name: diss;
+    animation-duration:3s ;
+
+}
+@keyframes diss {
+    0%{
+        opacity: 0;
+      ;
+
+    }
+    80%{
+        opacity: 0.5;
+       
+
+    }
+    100%{
+        opacity: 1;
+        
+
+    }
+    
+}
+.brand {
+  margin-left: 30px;
+}
+.brand-pre {
+  margin-left: -5px;
+  color: rgb(233, 227, 227);
+}
+.heading {
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+.heading-main {
+  font-size: 50px;
+ animation-name: fromleft;
+ animation-duration: 3s;
+}
+@keyframes fromleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+
+    }
+    80%{
+        opacity: 0.5;
+        transform: translateX(+20px);
+
+    }
+    100%{
+        opacity: 1;
+         transform: translateX(0);
+
+    }
+    
+}
+.heading-sub {
+  font-size: 30px;
+  color: rgb(92, 84, 84);
+  margin-left: 20px;
+  animation-name: fromright;
+  animation-duration: 3s;
+}
+@keyframes fromright {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    80%{
+        opacity: 0.5;
+        transform: translateX(-20px);
+
+    }
+    100%{
+        opacity: 1;
+         transform: translateX(0);
+
+    }
+    
+}
+.paragraph {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.button {
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color: black;
+  color: blanchedalmond;
+  padding: 10px 20px;
+}
+.navbar {
+  position: absolute;
+  right: 30px;
+}
+.btn {
+  margin-top: 1.5rem;
+  background-color: transparent;
+  color: white;
+}
+button:hover{
+    background-color: rgb(167, 157, 157);
+}
+span:hover{
+  color: blue;
+}
